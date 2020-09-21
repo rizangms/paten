@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePermohonanTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('permohonan', function (Blueprint $table) {
+            // $table->id();
+            $table->string('id', 20)->unique();
+            $table->string('nama');
+            $table->string('nik');
+            $table->string('alamat');
+            $table->string('no_hp');
+            $table->string('jenis');
+            $table->smallInteger('status');
+            $table->smallInteger('notify');
+            $table->text('alasan');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('permohonan');
+    }
+}

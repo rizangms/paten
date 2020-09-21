@@ -1,0 +1,397 @@
+body {
+	color: #353535;
+	font-family: 'Roboto', sans-serif;
+}
+
+.site-header {
+	background: url(../../../landing/img/color_background_surface_solid_18481_1920x1080.jpg) 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.lead {
+	padding: 3rem 0;
+	color: #fff;
+	color: #fffed9;
+}
+.lead .h1 {
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 400;
+	font-size: 3.5rem;
+	line-height: 1.1;
+	line-height: 0.85;
+	/*margin: 0.25em 0;*/
+	margin: 0.25em 0 0.25em -0.1em;
+	color: #fffa7e;
+}
+.lead .h2 {
+	font-size: 1.25rem;
+}
+.lead .h2 > * {
+	display: inline-block;
+}
+.lead .h3 {
+	/*margin-bottom: 1.25rem;*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+	/*text-transform: uppercase;*/
+	position: relative;
+}
+.lead .h1::before {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 0.25rem;
+	margin: 0.25rem -1.5rem 0;
+	background: #fff;
+	background: #fffa7e;
+	background: #fffed9;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	opacity: 0.5;
+}
+.lead a {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+@media (min-width: 992px) {
+	body.index .lead {
+		padding-bottom: 50%;
+	}
+	.lead {
+		text-align: left !important;
+	}
+	.lead .h3::before {
+		margin-left: 0;
+		left: 0;
+	}
+}
+@media (min-width: 576px) {
+	.lead .h1 {
+		font-size: 4.6rem;
+	}
+	.lead .h2,
+	.lead .h3 {
+		font-size: 1.5rem;
+	}
+}
+
+.access {
+	max-width: 400px;
+	margin: 1rem auto 3rem;
+	padding-top: 0.5rem;
+	color: #fff;
+	/*background: rgba(0, 0, 0, 0.75);*/
+	background: #093640;
+	border-radius: 5px;
+	border: 1px solid #0889a9!important;
+}
+.access-head {
+	padding: 1rem 1.5rem;
+	position: relative;
+}
+.access-head::before {
+	content: "";
+	display: block;
+	height: 1px;
+	border-top: 1px solid #fff;
+	position: absolute;
+	top: 100%;
+	left: 25%;
+	right: 25%;
+	opacity: 0.25;
+}
+.access-body {
+	padding: 1.5rem;
+}
+.access .notes {
+	font-style: italic;
+	font-size: 0.85em;
+	opacity: 0.75;
+}
+.access .btn,
+.access .form-control {
+	font-family: 'Raleway', sans-serif;
+}
+.access .btn {
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+.access h4 {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+.access p {
+	font-weight: 300;
+	margin: 0;
+}
+
+@media (min-width: 992px) {
+	.access {
+		margin-bottom: -5rem;
+		position: relative;
+		z-index: 2;
+	}
+	body.index .access {
+		margin-top: 200px;
+	}
+	.access::after {
+		content: "";
+		display: block;
+		width: 200px;
+		height: 200px;
+		margin: 0 -100px;
+		background: url(../../../landing/img/maskot-crop-2-ka.png) 50% 100% no-repeat;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+	}
+	.access-wrapper {
+		position: relative;
+	}
+	.access-wrapper .access {
+		position: absolute;
+		top: 230px;
+		left: 0;
+		right: 0;
+	}
+    .access .alert {
+    	font-size: 0.85em;
+    }
+}
+
+
+.site-main {
+	padding: 0 0 1rem;
+	background: #fff;
+	position: relative;
+	z-index: 2;
+}
+@media (min-width: 992px) {
+	.site-main {
+		min-height: 885px;
+	}
+	body.index .site-main {
+		min-height: 400px;
+	}
+}
+
+.page-header {
+	margin: 0 0 2rem;
+	padding: 2rem 0 1.5rem;
+	color: #fff;
+	/*background: #212121;*/
+	background: #093640;
+}
+.page-header .title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+.page-header .desc {
+	margin: 0;
+	font-weight: 300;
+}
+
+
+.site-main .hentry {
+	margin: 0 0 1.5rem;
+}
+.site-main .entry-title {
+	margin-top: 0.5rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+.site-main .entry-title a {
+	color: inherit;
+}
+.site-main .entry-title a:hover,
+.site-main .entry-title a:active {
+	color: #dc3545;
+}
+
+@media (min-width: 576px) {
+	.site-main .entry-title {
+		font-size: 1.5rem;
+	}
+}
+
+.site-footer {
+	color: #fff;
+	background: #dc3545;
+	background: #e63041;
+	/*background: linear-gradient(to bottom, #e62f41 0%, #9a212a 65%, #9a212a 100%);*/
+	background: linear-gradient(to bottom, #077f9a 0%, #04353e 65%, #033d49 100%);
+	position: relative;
+	z-index: 2;
+}
+.site-data {
+	padding: 2rem 0 1rem;
+}
+.footer-logo {
+	margin: 0 0 1.5rem;
+}
+.footer-logo img {
+	width: auto;
+	height: 4rem;
+	margin-bottom: 0.5em;
+}
+.footer-logo h2 {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+}
+.footer-logo h2 > * {
+	display: block;
+}
+.footer-logo h2 > big {
+	font-size: 2.25em;
+	font-family: 'Dancing Script', cursive;
+}
+.footer-logo h2 > small {
+	font-size: 0.85em;
+	letter-spacing: 1px;
+}
+.site-info {
+	padding: 1.5em 0;
+	font-size: 0.75rem;
+	color: rgba(255, 255, 255, 0.75);
+	background: rgba(0, 0, 0, 0.25);
+}
+.site-info a {
+	color: inherit;
+}
+.site-info a:hover,
+.site-info a:active {
+	color: #fff;
+}
+.site-info span {
+	display: inline-block;
+}
+
+@media (min-width: 576px) {
+	.footer-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-logo h2 {
+		text-align: left;
+	}
+	/*
+	.footer-logo h2 > big {
+		font-size: 2.75em;
+	}
+	*/
+	.footer-logo h2 > small {
+		font-size: 1em;
+		letter-spacing: 0.1em;
+	}
+	.footer-logo img {
+		margin-bottom: 0;
+		margin-right: 0.5em;
+	}
+}
+
+.lead {
+	text-shadow: 0.1em 0.1em 0.3em #000;
+}
+
+@media (min-width: 992px) {
+	.maskot {
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	body.index .maskot {
+		position: fixed;
+		top: 3rem;
+	}
+	.maskot .container {
+		position: relative;
+	}
+	.maskot .place {
+		display: block;
+		width: 225px;
+		height: 320px;
+		background: url(../../../landing/img/maskot-1.png) 50% 50% no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	body.index .maskot .place {
+		width: 265px;
+		height: 375px;
+	}
+}
+
+.screen .container {
+	position: relative;
+}
+
+@media (min-width: 992px) {
+    body.index .screen {
+        min-height: 95vh;
+    }
+	.screen .lead {
+		padding: 3rem 185px !important;
+		position: relative;
+		z-index: 1;
+	}
+	.screen .lead:before {
+		content: "";
+		display: block;
+		width: 145px;
+		height: 180px;
+		background: url(../../../landing/img/maskot-2.png) 50% 50% no-repeat;
+		position: absolute;
+		top: 3rem;
+		right: 3%;
+		z-index: -1;
+	}
+	body.index .form-access  {
+		padding-left: 300px;
+	}
+	
+	.as-sidebar {
+		padding-top: 9rem;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+}
+.form-access .access {
+	max-width: 320px;
+	margin: 0 auto 1.5rem !important;
+}
+.form-access .access:after {
+	display: none !important;
+}
+@media (min-width: 768px) {
+	body.index .form-access .access {
+		margin-bottom: 3rem !important;
+	}
+	.as-sidebar {
+		padding-bottom: 1.5rem;
+	}
+	.as-sidebar .access {
+		position: relative;
+		z-index: 4;
+	}
+}
+
+a.popup-link {
+    cursor: zoom-in;
+}
+}
